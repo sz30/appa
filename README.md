@@ -1,4 +1,4 @@
-<div align="center">
+
 
 
 ## 📋 环境变量
@@ -24,7 +24,8 @@
 
 ## 🌐 地址
 
-- 标准端口：`https://your-domain.com/sub`
-- 非标端口：`http://your-domain.com:port/sub`
+标准端口：`https://your-domain.com/sub`
+
+非标端口：`http://your-domain.com:port/sub`
 
 ---
