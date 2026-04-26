@@ -1,0 +1,22 @@
+{
+  "name": "appa",
+  "version": "1.0.0",
+  "description": "App deployment",
+  "main": "index.js",
+  "author": "sz30",
+  "repository": "https://github.com/sz30/appa",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Build step skipped'",
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
