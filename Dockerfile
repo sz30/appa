@@ -10,4 +10,4 @@ RUN apk update && apk upgrade && \
     chmod +x index.js && \
     npm install
 
-CMD ["node", "index.js"]
+CMD ["node", "--max-old-space-size=512", "index.js"]
