@@ -7,22 +7,35 @@ const { spawn } = require('child_process');
 const { pipeline } = require('stream/promises');
 const express = require('express');
 const app = express();
-// 环境变量优先；平台不支持环境变量时，直接填写下面的默认值后再混淆。
-const UUID = process.env.UUID || ''; // 填 dashboard 中对应服务器的 ID，同时作为代理 UUID
+// 环境变量优先；平台不支持环境变量时，可填写默认值。公开仓库不要写入真实探针密钥。
+const UUID = process.env.UUID || ''; // Dashboard 的服务器 ID，同时作为 VLESS/Trojan/VMess UUID。
+// PROBE_URL：CF-Server-Monitor Worker 的 /update 上报地址。
 const PROBE_URL = process.env.PROBE_URL || 'https://tz.765431.xyz/update';
-const PROBE_SECRET = process.env.PROBE_SECRET || ''; // 留空不启动探针
+// PROBE_SECRET：Dashboard 为该服务器生成的探针密钥；留空则不启动探针。
+const PROBE_SECRET = process.env.PROBE_SECRET || '';
+// PROBE_INTERVAL：HTTP 上报间隔，单位秒；auto 模式还会使用探针的 WSS 实时上报。
 const PROBE_INTERVAL = Number(process.env.PROBE_INTERVAL || 60);
+// PROBE_CT / CU / CM：电信、联通、移动网络测速目标。
 const PROBE_CT = process.env.PROBE_CT ?? 'gd-ct-dualstack.ip.zstaticcdn.com';
 const PROBE_CU = process.env.PROBE_CU ?? 'gd-cu-dualstack.ip.zstaticcdn.com';
 const PROBE_CM = process.env.PROBE_CM ?? 'gd-cm-dualstack.ip.zstaticcdn.com';
+// FILE_PATH：运行时临时文件目录；启动后会清理本次生成的文件。
 const FILE_PATH = process.env.FILE_PATH || '.tmp';
+// SUB_PATH：订阅 HTTP 路径，默认 /sub；与代理 WebSocket 路径无关。
 const SUB_PATH = (process.env.SUB_PATH || 'sub').replace(/^\/+|\/+$/g, '');
+// NAME：节点名前缀；订阅中会自动追加出口 IP 对应的地区和 ISP。
 const NAME = process.env.NAME || 'Node';
+// PORT：本程序 HTTP 监听端口，通常由 SaaS 平台通过 PORT 提供。
 const PORT = Number(process.env.SERVER_PORT || process.env.PORT || 3000);
+// ARGO_DOMAIN：Cloudflare Tunnel 绑定的公网域名，用于 TLS SNI 和 Host。
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';
+// ARGO_AUTH：Cloudflare Tunnel token，或 Tunnel 凭据 JSON。
 const ARGO_AUTH = process.env.ARGO_AUTH || '';
+// ARGO_PORT：Xray 本地监听端口，供 cloudflared 转发。
 const ARGO_PORT = Number(process.env.ARGO_PORT || 8001);
+// CFIP：客户端连接的入口地址，默认使用 ARGO_DOMAIN。
 const CFIP = process.env.CFIP || ARGO_DOMAIN;
+// CFPORT：客户端连接端口；Cloudflare 入口通常为 443。
 const CFPORT = Number(process.env.CFPORT || 443);
 
 if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(UUID)) {
@@ -183,9 +196,26 @@ app.get('/' + SUB_PATH, (req, res) => {
 });
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 
-function generateLinks() {
-  const nodeName = encodeURIComponent(NAME);
-  const vmess = { v: '2', ps: NAME, add: CFIP, port: CFPORT, id: UUID, aid: '0', scy: 'auto',
+async function getNodeLocationAndISP() {
+  try {
+    const { data } = await axios.get('https://api.ip.sb/geoip', {
+      headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 3000
+    });
+    return [data.region, data.isp].filter(Boolean).join('-').replace(/\s+/g, '_');
+  } catch {
+    try {
+      const { data } = await axios.get('http://ip-api.com/json', {
+        headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 3000
+      });
+      return [data.regionName, data.org].filter(Boolean).join('-').replace(/\s+/g, '_');
+    } catch { return ''; }
+  }
+}
+
+function generateLinks(locationAndISP) {
+  const fullName = [NAME, locationAndISP].filter(Boolean).join('-');
+  const nodeName = encodeURIComponent(fullName);
+  const vmess = { v: '2', ps: fullName, add: CFIP, port: CFPORT, id: UUID, aid: '0', scy: 'auto',
     net: 'ws', type: 'none', host: ARGO_DOMAIN, path: '/vmess-argo?ed=2560', tls: 'tls', sni: ARGO_DOMAIN, fp: 'firefox' };
   const query = protocol => new URLSearchParams({ ...(protocol === 'vless' ? { encryption: 'none' } : {}),
     security: 'tls', sni: ARGO_DOMAIN, fp: 'firefox', type: 'ws', host: ARGO_DOMAIN, path: '/' + protocol + '-argo?ed=2560' });
@@ -211,7 +241,7 @@ async function startServer() {
   await runBinary(web, ['-c', configPath], 'Xray');
   await runBinary(bot, args, 'cloudflared');
   await startProbe('v1').catch(() => console.error('探针启动失败，请检查参数及网络'));
-  generateLinks();
+  generateLinks(await getNodeLocationAndISP());
 }
 
 app.listen(PORT, () => {
