@@ -1,13 +1,11 @@
 FROM node:20-alpine3.20
 
-WORKDIR /app
+WORKDIR /tmp
 
-COPY package.json index.js index.html ./
+COPY package.json package-lock.json index.js index.html ./
 
 RUN apk update && apk upgrade && \
     apk add --no-cache openssl curl gcompat iproute2 coreutils bash && \
-    apk add --no-cache bash && \
-    chmod +x index.js && \
-    npm install
+    npm ci --omit=dev
 
 CMD ["node", "index.js"]

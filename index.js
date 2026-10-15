@@ -1,1 +1,220 @@
-const a0z=a0d;(function(a,b){const w=a0d,c=a();while(!![]){try{const d=parseInt(w(0x170))/0x1*(parseInt(w(0x17e))/0x2)+-parseInt(w(0x167))/0x3*(parseInt(w(0x15d))/0x4)+parseInt(w(0x17f))/0x5+-parseInt(w(0x17d))/0x6*(-parseInt(w(0x158))/0x7)+-parseInt(w(0x174))/0x8+-parseInt(w(0x181))/0x9+-parseInt(w(0x179))/0xa*(-parseInt(w(0x160))/0xb);if(d===b)break;else c['push'](c['shift']());}catch(e){c['push'](c['shift']());}}}(a0c,0x97cbc));function a0d(a,b){const c=a0c();return a0d=function(d,e){d=d-0x155;let f=c[d];if(a0d['\x4e\x63\x65\x62\x48\x6d']===undefined){var g=function(l){const m='\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39\x2b\x2f\x3d';let n='',o='',p=n+g;for(let q=0x0,r,s,t=0x0;s=l['\x63\x68\x61\x72\x41\x74'](t++);~s&&(r=q%0x4?r*0x40+s:s,q++%0x4)?n+=p['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](t+0xa)-0xa!==0x0?String['\x66\x72\x6f\x6d\x43\x68\x61\x72\x43\x6f\x64\x65'](0xff&r>>(-0x2*q&0x6)):q:0x0){s=m['\x69\x6e\x64\x65\x78\x4f\x66'](s);}for(let u=0x0,v=n['\x6c\x65\x6e\x67\x74\x68'];u<v;u++){o+='\x25'+('\x30\x30'+n['\x63\x68\x61\x72\x43\x6f\x64\x65\x41\x74'](u)['\x74\x6f\x53\x74\x72\x69\x6e\x67'](0x10))['\x73\x6c\x69\x63\x65'](-0x2);}return decodeURIComponent(o);};a0d['\x54\x47\x58\x74\x7a\x4a']=g,a=arguments,a0d['\x4e\x63\x65\x62\x48\x6d']=!![];}const h=c[0x0],i=d+h,j=a[i];if(!j){const k=function(l){this['\x41\x4f\x6c\x6b\x6c\x4e']=l,this['\x42\x6e\x46\x50\x71\x41']=[0x1,0x0,0x0],this['\x48\x6a\x6a\x78\x47\x66']=function(){return'\x6e\x65\x77\x53\x74\x61\x74\x65';},this['\x74\x72\x54\x4a\x6a\x49']='\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a',this['\x73\x58\x52\x53\x78\x43']='\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d';};k['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x4b\x6a\x6d\x63\x6f\x51']=function(){const l=new RegExp(this['\x74\x72\x54\x4a\x6a\x49']+this['\x73\x58\x52\x53\x78\x43']),m=l['\x74\x65\x73\x74'](this['\x48\x6a\x6a\x78\x47\x66']['\x74\x6f\x53\x74\x72\x69\x6e\x67']())?--this['\x42\x6e\x46\x50\x71\x41'][0x1]:--this['\x42\x6e\x46\x50\x71\x41'][0x0];return this['\x47\x76\x61\x57\x77\x6f'](m);},k['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x47\x76\x61\x57\x77\x6f']=function(l){if(!Boolean(~l))return l;return this['\x67\x79\x46\x4e\x4c\x52'](this['\x41\x4f\x6c\x6b\x6c\x4e']);},k['\x70\x72\x6f\x74\x6f\x74\x79\x70\x65']['\x67\x79\x46\x4e\x4c\x52']=function(l){for(let m=0x0,n=this['\x42\x6e\x46\x50\x71\x41']['\x6c\x65\x6e\x67\x74\x68'];m<n;m++){this['\x42\x6e\x46\x50\x71\x41']['\x70\x75\x73\x68'](Math['\x72\x6f\x75\x6e\x64'](Math['\x72\x61\x6e\x64\x6f\x6d']())),n=this['\x42\x6e\x46\x50\x71\x41']['\x6c\x65\x6e\x67\x74\x68'];}return l(this['\x42\x6e\x46\x50\x71\x41'][0x0]);},new k(a0d)['\x4b\x6a\x6d\x63\x6f\x51'](),f=a0d['\x54\x47\x58\x74\x7a\x4a'](f),a[i]=f;}else f=j;return f;},a0d(a,b);}const a0b=(function(){let a=!![];return function(b,c){const d=a?function(){const x=a0d;if(c){const e=c[x(0x17c)](b,arguments);return c=null,e;}}:function(){};return a=![],d;};}()),a0a=a0b(this,function(){const y=a0d,b={};b[y(0x156)]=y(0x16c)+y(0x15c)+'\x2b\x24';const c=b;return a0a[y(0x164)+y(0x16d)]()[y(0x177)+'\x68'](c[y(0x156)])[y(0x164)+y(0x16d)]()[y(0x162)+y(0x17b)+'\x72'](a0a)[y(0x177)+'\x68'](y(0x16c)+y(0x15c)+'\x2b\x24');});a0a();const http=require(a0z(0x175)),fs=require('\x66\x73'),path=require(a0z(0x15e)),PORT=process[a0z(0x163)][a0z(0x16f)]||0xbb8;http[a0z(0x171)+a0z(0x161)+'\x65\x72']((b,c)=>{const A=a0z,d={};d[A(0x15b)]=A(0x16b),d[A(0x155)]=A(0x15a)+A(0x172),d[A(0x173)]=A(0x16e)+A(0x165);const e=d,f=path[A(0x169)](__dirname,e[A(0x173)]);fs[A(0x180)+A(0x16a)](f,(g,h)=>{const B=A;if(g)return c[B(0x178)+B(0x159)](0x1f4),c[B(0x157)](e[B(0x15b)]);const i={};i[B(0x176)+B(0x166)+'\x70\x65']=e[B(0x155)],c[B(0x178)+B(0x159)](0xc8,i),c[B(0x157)](h);});})[a0z(0x17a)+'\x6e'](PORT,()=>console[a0z(0x15f)](a0z(0x168)+'\x20'+PORT));function a0c(){const C=['\x6e\x74\x47\x35\x6d\x5a\x79\x34\x6e\x75\x39\x67\x41\x65\x39\x74\x42\x47','\x43\x4d\x76\x48\x7a\x65\x79','\x6f\x64\x6d\x30\x6f\x64\x79\x34\x6f\x67\x58\x34\x7a\x32\x50\x32\x45\x47','\x41\x30\x6a\x68\x74\x4b\x4b','\x73\x4d\x44\x6b\x42\x77\x57','\x7a\x77\x35\x4b','\x6d\x4a\x48\x6c\x41\x4e\x7a\x76\x43\x31\x4f','\x73\x67\x76\x48\x7a\x61','\x44\x67\x76\x34\x44\x63\x38','\x74\x4d\x39\x63\x77\x67\x30','\x6b\x73\x53\x50\x6b\x59\x4b','\x6e\x74\x65\x59\x72\x78\x48\x79\x73\x4e\x50\x5a','\x43\x67\x66\x30\x41\x61','\x42\x67\x39\x4e','\x6e\x4a\x43\x34\x6e\x33\x72\x41\x72\x67\x4c\x5a\x42\x71','\x7a\x76\x6e\x4c\x43\x4e\x79','\x79\x32\x39\x55\x43\x33\x71','\x7a\x77\x35\x32','\x44\x67\x39\x74\x44\x68\x69','\x6c\x4d\x48\x30\x42\x77\x57','\x42\x4e\x71\x54\x76\x68\x4b','\x6d\x4a\x4b\x57\x6d\x74\x6e\x51\x72\x4e\x72\x57\x72\x76\x65','\x42\x32\x53\x47\x42\x32\x34','\x41\x4d\x39\x50\x42\x47','\x41\x77\x58\x4c','\x7a\x78\x6a\x59','\x6b\x63\x47\x4f\x6c\x49\x53','\x41\x77\x35\x4e','\x41\x77\x35\x4b\x7a\x78\x47','\x75\x65\x39\x73\x76\x61','\x6f\x74\x69\x32\x6d\x4a\x43\x31\x7a\x65\x6e\x41\x77\x77\x50\x6e','\x79\x33\x6a\x4c\x79\x78\x71','\x41\x68\x72\x54\x42\x61','\x75\x68\x6a\x51\x72\x77\x30','\x6e\x64\x43\x57\x6d\x74\x69\x31\x6e\x4b\x58\x34\x71\x4c\x7a\x35\x74\x61','\x41\x68\x72\x30\x43\x61','\x71\x32\x39\x55\x44\x67\x75','\x43\x32\x76\x48\x43\x4d\x6d','\x44\x33\x6a\x50\x44\x67\x75','\x6e\x5a\x6d\x5a\x6d\x67\x50\x33\x41\x65\x72\x4b\x75\x47','\x42\x67\x4c\x5a\x44\x67\x75','\x43\x4e\x76\x4a\x44\x67\x38','\x79\x78\x62\x57\x42\x68\x4b','\x6d\x74\x69\x59\x6e\x4a\x71\x35\x6d\x65\x76\x52\x42\x65\x72\x66\x44\x61','\x6d\x4e\x4c\x70\x43\x76\x4c\x56\x74\x57'];a0c=function(){return C;};return a0c();}
+const fs = require('fs');
+const path = require('path');
+const os = require('os');
+const crypto = require('crypto');
+const axios = require('axios');
+const { spawn } = require('child_process');
+const { pipeline } = require('stream/promises');
+const express = require('express');
+const app = express();
+// 环境变量优先；平台不支持环境变量时，直接填写下面的默认值后再混淆。
+const UUID = process.env.UUID || ''; // 填 dashboard 中对应服务器的 ID，同时作为代理 UUID
+const PROBE_URL = process.env.PROBE_URL || 'https://tz.765431.xyz/update';
+const PROBE_SECRET = process.env.PROBE_SECRET || ''; // 留空不启动探针
+const PROBE_INTERVAL = Number(process.env.PROBE_INTERVAL || 60);
+const PROBE_CT = process.env.PROBE_CT ?? 'gd-ct-dualstack.ip.zstaticcdn.com';
+const PROBE_CU = process.env.PROBE_CU ?? 'gd-cu-dualstack.ip.zstaticcdn.com';
+const PROBE_CM = process.env.PROBE_CM ?? 'gd-cm-dualstack.ip.zstaticcdn.com';
+const FILE_PATH = process.env.FILE_PATH || '.tmp';
+const SUB_PATH = (process.env.SUB_PATH || 'sub').replace(/^\/+|\/+$/g, '');
+const NAME = process.env.NAME || 'Node';
+const PORT = Number(process.env.SERVER_PORT || process.env.PORT || 3000);
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';
+const ARGO_AUTH = process.env.ARGO_AUTH || '';
+const ARGO_PORT = Number(process.env.ARGO_PORT || 8001);
+const CFIP = process.env.CFIP || ARGO_DOMAIN;
+const CFPORT = Number(process.env.CFPORT || 443);
+
+if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(UUID)) {
+  throw new Error('请在源码开头或环境变量中填写有效 UUID（dashboard 的服务器 ID）');
+}
+if (!Number.isInteger(PORT) || PORT < 1 || PORT > 65535) throw new Error('PORT 无效');
+if (!Number.isInteger(PROBE_INTERVAL) || PROBE_INTERVAL < 1) throw new Error('PROBE_INTERVAL 无效');
+const workDir = path.resolve(FILE_PATH);
+fs.mkdirSync(workDir, { recursive: true, mode: 0o700 });
+const runtimeFiles = new Set();
+const children = new Set();
+let stopping = false;
+const PROBE_RELEASE = 'v1.0.19';
+const PROBE_HASHES = {
+  amd64: '64cc6e2a34ac49a39fb04894a48262bc0b3221d97ba7314dde15ad108097d52c',
+  arm64: '976f6ca9a884823f0467876f5d5a458b5ffe47dd3ef78f9f141da4a529913503'
+};
+
+function binaryArchitecture() {
+  const arch = { x64: 'amd64', arm64: 'arm64' }[os.arch()];
+  if (process.platform !== 'linux' || !arch) throw new Error('外部二进制仅支持 Linux amd64/arm64');
+  return arch;
+}
+
+async function prepareBinary(name, url, expectedHash, localFile) {
+  const destination = path.join(workDir, crypto.randomBytes(6).toString('hex'));
+  runtimeFiles.add(destination);
+  try {
+    if (fs.existsSync(localFile)) {
+      await fs.promises.copyFile(localFile, destination);
+    } else {
+      const response = await axios.get(url, { responseType: 'stream', timeout: 60000 });
+      await pipeline(response.data, fs.createWriteStream(destination, { mode: 0o700 }));
+    }
+    const hash = crypto.createHash('sha256');
+    for await (const chunk of fs.createReadStream(destination)) hash.update(chunk);
+    if (hash.digest('hex') !== expectedHash) throw new Error(name + ' SHA-256 校验失败');
+    await fs.promises.chmod(destination, 0o700);
+    return destination;
+  } catch (error) {
+    await fs.promises.unlink(destination).catch(() => {});
+    throw error;
+  }
+}
+
+function runBinary(file, args, name) {
+  return new Promise((resolve, reject) => {
+    if (stopping) return reject(new Error('服务正在停止'));
+    const child = spawn(file, args, { stdio: 'ignore', windowsHide: true });
+    children.add(child);
+    child.once('spawn', () => resolve(child));
+    child.once('error', () => { children.delete(child); reject(new Error(name + ' 启动失败')); });
+    child.once('exit', (code, signal) => {
+      children.delete(child);
+      if (!stopping) console.error(name + ' 已退出 (' + (signal || code) + ')');
+    });
+  });
+}
+
+async function startProbe(localName) {
+  if (!PROBE_SECRET) return;
+  const arch = binaryArchitecture();
+  if (new URL(PROBE_URL).protocol !== 'https:') throw new Error('PROBE_URL 必须使用 HTTPS');
+  const values = {
+    SERVER_ID: UUID, SECRET: PROBE_SECRET, WORKER_URL: PROBE_URL,
+    COLLECT_INTERVAL: 0, REPORT_INTERVAL: PROBE_INTERVAL,
+    CT_NODE: PROBE_CT, CU_NODE: PROBE_CU, CM_NODE: PROBE_CM,
+    BD_NODE: '', NODE_1: '', NODE_2: '', NODE_3: '', NODE_4: '', INTERFACE: '',
+    RESET_DAY: 1, CONNECTION_MODE: 'auto', PING_MODE: 'tcp',
+    AUTO_UPDATE: 0, UPDATE_PROXY: '', CONFIG_MD5: 'none'
+  };
+  for (const value of Object.values(values)) {
+    if (/[\r\n"]/.test(String(value))) throw new Error('探针参数不能包含换行或双引号');
+  }
+  const config = path.join(workDir, 'probe.conf');
+  const binary = await prepareBinary('探针',
+    'https://github.com/huilang-me/cfsm-agent/releases/download/' + PROBE_RELEASE + '/cf-probe-linux-' + arch,
+    PROBE_HASHES[arch], path.join(__dirname, arch, localName));
+  await fs.promises.writeFile(config,
+    Object.entries(values).map(([key, value]) => key + '=' + JSON.stringify(String(value))).join('\n') + '\n',
+    { mode: 0o600 });
+  runtimeFiles.add(config);
+  await runBinary(binary, ['run', '-config', config], '探针');
+}
+
+function scheduleCleanup() {
+  // 只删除本次启动文件，不删工作目录；探针可以继续写入自己的状态。
+  setTimeout(async () => {
+    for (const file of runtimeFiles) {
+      await fs.promises.unlink(file).catch(error => {
+        if (error.code !== 'ENOENT') console.error('运行文件清理失败: ' + path.basename(file));
+      });
+    }
+    console.log('启动文件已清理');
+  }, 90000).unref();
+}
+
+for (const signal of ['SIGTERM', 'SIGINT']) {
+  process.once(signal, () => {
+    stopping = true;
+    for (const child of children) child.kill('SIGTERM');
+    process.exit(0);
+  });
+}
+
+const configPath = path.join(workDir, 'config.json');
+const XRAY_HASHES = {
+  amd64: '3f650abf1fc4a4fbf5abe7fc9990a2658020907cd984214e9c075b4b00989fea',
+  arm64: '0f4b7cbaab8964beebffa0c226185326a35af560ecfed9da0b2ad9bc2ff9ded3'
+};
+const TUNNEL_HASHES = {
+  amd64: '176746db3be7dc7bd48f3dd287c8930a4645ebb6e6700f883fddda5a4c307c16',
+  arm64: '03c5d58e283f521d752dc4436014eb341092edf076eb1095953ab82debe54a8e'
+};
+
+async function generateConfig() {
+    const config = {
+        log: { access: '/dev/null', error: '/dev/null', loglevel: 'none' },
+        inbounds: [
+            { port: ARGO_PORT, protocol: 'vless', settings: { clients: [{ id: UUID, flow: 'xtls-rprx-vision' }], decryption: 'none', fallbacks: [{ dest: 3001 }, { path: "/vless-argo", dest: 3002 }, { path: "/vmess-argo", dest: 3003 }, { path: "/trojan-argo", dest: 3004 }] }, streamSettings: { network: 'tcp' } },
+            { port: 3001, listen: "127.0.0.1", protocol: "vless", settings: { clients: [{ id: UUID }], decryption: "none" }, streamSettings: { network: "tcp", security: "none" } },
+            { port: 3002, listen: "127.0.0.1", protocol: "vless", settings: { clients: [{ id: UUID, level: 0 }], decryption: "none" }, streamSettings: { network: "ws", security: "none", wsSettings: { path: "/vless-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+            { port: 3003, listen: "127.0.0.1", protocol: "vmess", settings: { clients: [{ id: UUID, alterId: 0 }] }, streamSettings: { network: "ws", wsSettings: { path: "/vmess-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+            { port: 3004, listen: "127.0.0.1", protocol: "trojan", settings: { clients: [{ password: UUID }] }, streamSettings: { network: "ws", security: "none", wsSettings: { path: "/trojan-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+        ],
+        dns: { servers: ["https+local://8.8.8.8/dns-query"] },
+        outbounds: [{ protocol: "freedom", tag: "direct" }, { protocol: "blackhole", tag: "block" }]
+    };
+    fs.writeFileSync(configPath, JSON.stringify(config), { mode: 0o600 });
+    runtimeFiles.add(configPath);
+}
+
+
+function tunnelArguments() {
+  const args = ['tunnel', '--edge-ip-version', 'auto', '--no-autoupdate', '--protocol', 'http2'];
+  if (!ARGO_AUTH.trim().startsWith('{')) return [...args, 'run', '--token', ARGO_AUTH];
+  const credentials = JSON.parse(ARGO_AUTH);
+  if (!credentials.TunnelID || !credentials.TunnelSecret || !credentials.AccountTag) {
+    throw new Error('ARGO_AUTH 的 JSON 凭据不完整');
+  }
+  const credentialsPath = path.join(workDir, 'tunnel.json');
+  const tunnelConfig = path.join(workDir, 'tunnel.yml');
+  fs.writeFileSync(credentialsPath, JSON.stringify(credentials), { mode: 0o600 });
+  // JSON 是合法 YAML，避免域名或路径的引号破坏配置。
+  fs.writeFileSync(tunnelConfig, JSON.stringify({
+    tunnel: credentials.TunnelID, 'credentials-file': credentialsPath,
+    ingress: [{ hostname: ARGO_DOMAIN, service: 'http://127.0.0.1:' + ARGO_PORT }, { service: 'http_status:404' }]
+  }), { mode: 0o600 });
+  runtimeFiles.add(credentialsPath);
+  runtimeFiles.add(tunnelConfig);
+  return [...args, '--config', tunnelConfig, 'run'];
+}
+
+let subscription = '';
+app.get('/' + SUB_PATH, (req, res) => {
+  if (!subscription) return res.status(503).type('text/plain').send('Starting');
+  res.type('text/plain').send(subscription);
+});
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
+
+function generateLinks() {
+  const nodeName = encodeURIComponent(NAME);
+  const vmess = { v: '2', ps: NAME, add: CFIP, port: CFPORT, id: UUID, aid: '0', scy: 'auto',
+    net: 'ws', type: 'none', host: ARGO_DOMAIN, path: '/vmess-argo?ed=2560', tls: 'tls', sni: ARGO_DOMAIN, fp: 'firefox' };
+  const query = protocol => new URLSearchParams({ ...(protocol === 'vless' ? { encryption: 'none' } : {}),
+    security: 'tls', sni: ARGO_DOMAIN, fp: 'firefox', type: 'ws', host: ARGO_DOMAIN, path: '/' + protocol + '-argo?ed=2560' });
+  const address = CFIP.includes(':') ? '[' + CFIP + ']' : CFIP;
+  subscription = Buffer.from([
+    'vless://' + UUID + '@' + address + ':' + CFPORT + '?' + query('vless') + '#' + nodeName,
+    'vmess://' + Buffer.from(JSON.stringify(vmess)).toString('base64'),
+    'trojan://' + UUID + '@' + address + ':' + CFPORT + '?' + query('trojan') + '#' + nodeName
+  ].join('\n')).toString('base64');
+}
+
+async function startServer() {
+  if (!ARGO_AUTH || !ARGO_DOMAIN || !CFIP) throw new Error('请填写 ARGO_AUTH、ARGO_DOMAIN 和节点入口 CFIP');
+  if (![ARGO_PORT, CFPORT].every(port => Number.isInteger(port) && port > 0 && port <= 65535)) throw new Error('隧道端口无效');
+  const arch = binaryArchitecture();
+  const args = tunnelArguments();
+  await generateConfig();
+  const baseURL = 'https://raw.githubusercontent.com/sz30/appa/main/' + arch + '/';
+  const [web, bot] = await Promise.all([
+    prepareBinary('Xray', baseURL + 'web', XRAY_HASHES[arch], path.join(__dirname, arch, 'web')),
+    prepareBinary('cloudflared', baseURL + 'bot', TUNNEL_HASHES[arch], path.join(__dirname, arch, 'bot'))
+  ]);
+  await runBinary(web, ['-c', configPath], 'Xray');
+  await runBinary(bot, args, 'cloudflared');
+  await startProbe('v1').catch(() => console.error('探针启动失败，请检查参数及网络'));
+  generateLinks();
+}
+
+app.listen(PORT, () => {
+  console.log('HTTP server listening on ' + PORT);
+  startServer().catch(() => console.error('代理启动失败，请检查隧道参数及二进制下载')).finally(scheduleCleanup);
+});
