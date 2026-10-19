@@ -1,10 +1,10 @@
 {
-  "name": "appa",
+  "name": "2048--",
   "version": "1.0.0",
   "description": "App deployment",
   "main": "index.js",
   "author": "sz30",
-  "repository": "https://github.com/sz30/appa",
+  "repository": "https://github.com/sz30/2048--",
   "license": "MIT",
   "private": true,
   "scripts": {
